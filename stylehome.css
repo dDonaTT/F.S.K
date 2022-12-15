@@ -30,7 +30,7 @@ html{
 
 .main{
     width: 100%;
-    background: linear-gradient(to top, rgba(0,0,0,0.3)10%,rgba(0,0,0,0.3)10%), url(foto/dfsk-780x439-1.jpg);
+    background: linear-gradient(to top, rgba(0,0,0,0.3)10%,rgba(0,0,0,0.3)10%), url(img/dfsk-780x439-1.jpg);
     background-position: center;
     background-size: cover;
     height: 100vh;
