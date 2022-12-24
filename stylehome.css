@@ -83,45 +83,25 @@ html{
     padding-top: 4px;
     padding-left: 20px;
 }
-.menu{
-    margin: 0;
-    padding: 0;
+#headD ul{
     display: flex;
-    width: 400px;
-    float: right;
-    padding: 1.5em;
-    
-    
-    
-}
-
-ul{
-    display: flex;  
-    
-    
-}
-
-ul li{
-    list-style: none;
+    justify-content: flex-end;
     align-items: center;
-    
-    
+    list-style-type: none;
+    margin: 0;
+    height: 80px;
+    margin-right: 35px;
 }
-
-ul li a{
+#headD ul li a{
     text-decoration: none;
     color: #4b5320;
-    font-size: 15px;
+    font-size: 14px;
     font-family: Arial;
     font-weight: bold;
     padding-right: 1.2em;
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
-    
-    
-    
 }
-
-ul li a:hover{
+#headD ul li a:hover{
     color: white;    
 
 }
@@ -129,11 +109,8 @@ ul li a:hover{
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-evenly;
-    
-    
+    justify-content: space-evenly;   
 }
-
 .armatimi{
     display: flex;
     flex-direction: column;
@@ -193,7 +170,7 @@ ul li a:hover{
 }
 
 .automjetet img{
-    
+   
     width: 80px;
     height: 60px;
 }
@@ -227,5 +204,13 @@ ul li a:hover{
     height: 70px;
     
 }
+
+#stafi h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
 
 
