@@ -182,6 +182,10 @@ label{
 	margin-left: auto;
 	color: #4b5320;
 }
+p a{
+	text-decoration: none;
+	color: black;
+}
 
 
 
