@@ -20,16 +20,17 @@
         </div>
         <div class="screen">
             <div class="screen_content">
-                <form class="login">
+                <form action="" method="POST" class="login" onsubmit="return validate()">
+
                     <label>Log in</label>
                     <div class="login_field">
                         <i class="login_icon"></i>
                         
-                        <input type="text" class="login_input" placeholder="Username">
+                        <input type="text" class="login_input" placeholder="Username" id="user">
                     </div>
                     <div class="login_field">
                         <i class="login_icon"></i>
-                        <input type="password" class="login_input" placeholder="Password">
+                        <input type="password" class="login_input" placeholder="Password" id="pass">
                         
                     </div>
                     <p>Nuk keni account?Kliko <a href="register.html"><b> ketu </b></a> tu regjistruar</p>
@@ -49,6 +50,6 @@
             </div>		
         </div>
     </div>
-    
+    <script src="loginscript.js"></script>
 </body>
 </html>
