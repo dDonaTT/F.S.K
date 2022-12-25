@@ -23,7 +23,7 @@
                 <section class="registration-container">
                     <h2>Regjistrohu</h2>
                     <section class="detail-container">
-                        <form action="" class="registration-form">
+                        <form action="" method="POST" class="registration-form" onsubmit="return validate()">
                             <h4> Të dhënat personale</h4>
                             <section class="personal-details">
                                 <div class="two-details-item">
@@ -36,8 +36,8 @@
                                 </div>
                                 <div class="two-details-item">
                                     <label for="DOB">
-                                        <p>Data e lindjes</p>
-                                        <input type="text" name="DOB" id="DOB" placeholder="Shenoni daten e lindjes"></label>
+                                        <p>Mosha</p>
+                                        <input type="number" name="DOB" id="DOB" placeholder="Shenoni moshen tuaj"></label>
                                     <label for="email">
                                         <p>Email</p>
                                         <input type="email" name="email" id="email" placeholder="Shenoni emailin tuaj"></label>                              
@@ -49,6 +49,14 @@
                                     <label for="adresa">
                                         <p>Adresa</p>
                                         <input type="text" name="adresa" id="adresa" placeholder="Shenoni adresen tuaj"></label>                            
+                                </div>
+                                <div class="two-details-item">
+                                    <label for="ph">
+                                        <p>Passwordi</p>
+                                        <input type="text" name="pass" id="pass" placeholder="Shenoni passwordin tuaj "></label>
+                                    <label for="adresa">
+                                        <p>Confirm Password</p>
+                                        <input type="text" name="cpass" id="cpass" placeholder="Konfirmoni passwordin tuaj"></label>                            
                                 </div>
                             </section>
                             <button class="submit-btn"><a href="home.html">Submit</a></button>
