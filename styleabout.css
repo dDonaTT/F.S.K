@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgb(230, 230, 230);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 12px;
+    background-color: rgb(230, 230, 230);
+    background-image: -webkit-gradient(linear,
+                    40% 0%,
+                     75% 84%,
+              from(rgb(0, 0, 0)),
+              to(rgb(23, 53, 28)),
+              color-stop(.8, rgb(17, 24, 17)))
+}
+
+.main{
+   
+
+    background-position: center;
+    background-size: cover;
+    
+    padding-top: 120px; 
+    background: linear-gradient(to top, rgba(0,0,0,0.3)10%,rgba(0,0,0,0.3)10%), url(img/backgound.png);
+    
+}
+
+
+.btn{
+    background-color: #4b5320;
+    color: #fff;
+    height: 50px;
+    width: 130px;
+    margin-left: 35px;
+    border-radius: 50px;
+    opacity: 0.7;
+    font-size: 20px;
+    margin-top: 30px;
+    
+}
+.navbar{
+    top: 0;
+    background-color: rgba(208, 210, 221, 1);
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icon{
+    display: flex;
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.icon img{
+    width: 60px;
+    height: 60px;
+    padding-top: 4px;
+    padding-left: 20px;
+}
+#headD ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    height: 80px;
+    margin-right: 35px;
+}
+#headD ul li a{
+    text-decoration: none;
+    color: #4b5320;
+    font-size: 14px;
+    font-family: Arial;
+    font-weight: bold;
+    padding-right: 1.2em;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+#headD ul li a:hover{
+    color: white;    
+}
+.content{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    opacity: 0.9; 
+    letter-spacing: 2px;
+    
+}
+.content h2{
+    text-align: center;
+}
+hr{
+    margin-bottom: 12px;
+}
+.stafi{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.pr{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    
+    font-size: 1em;   
+    text-align: center;
+    margin-left: 25px;
+    width: 16vw;
+    border: 1px solid #4b5320;
+    border-radius: 10px;    
+}
+.pr img{
+    height: 250px;
+    width: 200px;
+}
