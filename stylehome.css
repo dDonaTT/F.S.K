@@ -34,6 +34,7 @@ html{
     background-position: center;
     background-size: cover;
     height: 100vh;
+    width: 100%;
     padding-top: 120px;
     
 }
@@ -284,10 +285,190 @@ footer{
     
 }
 .map iframe{   
-    width: 1000px;
+    width: 750px;
     height: 500px;
 }
+/*Responsive*/
+  
+@media screen and (max-width: 1435px) {
+    html{
+        width: 100%;
+        height: 100%;
+    }
+    .main h3 {
+        
+        padding-top: 900px;
+        
+    }
+    #content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;   
+    }
+    #armatimi{
+        font-size: 0.9em;   
+        text-align: center;
+        width: 50vw;   
+    }
+    #automjetet{
+        font-size: 0.9em;   
+        text-align: center;
+        width: 50vw;  
+    }
+    #stafi{
+        font-size: 0.9em;   
+        text-align: center;
+        width: 50vw;
 
+    }
+    .adresa{
+        font-size: 0.7em;
+        width: 42vw;
+    }
+    .nrtel{
+        font-size: 0.7em;
+        width: 40vw;
+    }
+    .email {
+        font-size: 0.7em;
+        width: 40vw;
+    }
+    .map{
+        
+        width: 5px;
+        height: 5px;
+    }
+    footer{
+        padding-left: 200px;
+        width: fit-content;
+        height: fit-content;
+    }
+  }
+  
+  @media screen and (max-width: 1345px) {
+    html{
+        width: 100%;
+        height: 100%;
+    }
+    #headD ul {
+        margin-right: 20px;
+        font-size: 0.5em;
+    }
+  
+    .main h3 {
+        
+        padding-top: 850px;
+        
+    }
+    #content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;   
+    }
+    #armatimi{
+        font-size: 0.9em;   
+        text-align: center;
+        width: 50vw;   
+    }
+    #automjetet{
+        font-size: 0.9em;   
+        text-align: center;
+        width: 50vw;  
+    }
+    #stafi{
+        font-size: 0.9em;   
+        text-align: center;
+        width: 50vw;
 
+    }
+    .adresa{
+        font-size: 0.7em;
+        width: 42vw;
+    }
+    .nrtel{
+        font-size: 0.7em;
+        width: 40vw;
+    }
+    .email {
+        font-size: 0.7em;
+        width: 40vw;
+    }
+  }
+  
+  @media screen and (max-width: 1255px) {
+    
+    .main h3 {   
+        padding-top: 400px;
+        font-size: 1.5rem;    
+    }
+    
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .main h3 {   
+        padding-top: 500px;
+        font-size: 1rem;
+    }
+    .main{
+        width: 100%;
+        height: 100%;
+    }
+  }
+  
+  
+  @media screen and (max-width: 900px) {
+    .main h3 {   
+        padding-top: 500px;
+        font-size: 1rem;
+    }
+  }
+   
+  @media screen and (max-width: 700px) {
+    .main h3 {   
+        padding-top: 350px;
+        font-size: 1rem;
+    }
+    .main .btn{
+        margin-bottom: 20px;
+    }
+    #headD ul {
+        font-size: 5px;
+        margin-right: 5px;
+    }
+    .main{
+        width: 700px;
+        
+    }
+    #contact h1{
+        margin-left: 250px; 
+    }
+    
+    
+    #armatimi{
+        margin-left: 250px; 
+    }
+    #automjetet{
+         margin-left: 250px; 
+    }
+    #stafi{
+        margin-left: 250px; 
 
+    }
+    hr{
+        width: 700px;
+    }
+    .adresa{
+        margin: 100px 20px 20px 80px;
+    }
+    .nrtel{
+        margin: 100px 20px 20px 10px;
+    }
+    .email{
+        margin: 100px 50px 20px 5px;
+    }
+  
+  } 
+    
+  
+  
 

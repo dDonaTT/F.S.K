@@ -98,6 +98,11 @@ html{
 #headD ul li a:hover{
     color: white;    
 }
+.trajnimet{
+    padding-top: 15px;
+    color: white;
+    text-align: center;
+}
 .content{
     margin: 0;
     padding: 0;
@@ -116,16 +121,18 @@ hr{
     display: flex;
     flex-direction: row;
     margin-top: 20px;
+    
 }
 
 .pr{
-    margin-top: 40px;
+    margin-top: 20px;
     display: flex;
-    flex-direction: column;
-    
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
     font-size: 1em;   
     text-align: center;
-    margin-left: 25px;
+    margin-left: 20px;
     width: 16vw;
     border: 1px solid #4b5320;
     border-radius: 10px;    
@@ -134,3 +141,77 @@ hr{
     height: 250px;
     width: 200px;
 }
+  
+@media screen and (max-width: 1435px) {
+    html{
+        width: 100%;
+        height: 100%;
+    }
+    p{
+        margin-left: 12px;
+    }
+    .stafi {
+        
+        flex-direction: column;
+        margin-top: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .pr{
+        width: 60vw;
+        justify-content: center;
+        align-items: center;
+    }
+    
+  }
+  
+  @media screen and (max-width: 1345px) {
+    html{
+        width: 100%;
+        height: 100%;
+    }
+    #headD ul {
+        margin-right: 20px;
+        font-size: 0.5em;
+    }
+  
+    
+    
+  }
+  
+  @media screen and (max-width: 1255px) {
+    
+    
+    
+  }
+  
+  @media screen and (max-width: 1000px) {
+    
+    .main{
+        width: 100%;
+        height: 100%;
+    }
+  }
+  
+  
+  @media screen and (max-width: 900px) {
+    
+  }
+   
+  @media screen and (max-width: 700px) {
+    
+    
+    #headD ul {
+        font-size: 5px;
+        margin-right: 5px;
+    }
+    .main{
+        width: 700px;
+        
+    }
+    
+    
+    
+   
+  
+  }
