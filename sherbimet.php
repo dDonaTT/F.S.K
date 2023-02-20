@@ -17,16 +17,9 @@
                 <a href="home.html"><img src="img/logo.png" alt="logo"></a>
             </div>
 
-            <div id="headD">
-
-                <ul>
-                    <li><a href="home.html">HOME</a></li>
-                    <li><a href="about.html">RRETH NESH</a></li>
-                    <li><a href="sherbimet.html">SHERBIMET</a></li>
-                    <li><a href="home.html#contact">KONTAKTI</a></li>
-                    <li><a href="login.html">LOG IN</a></li>
-                </ul>
-            </div>
+            <?php 
+                include('navbar/navbar.php');
+                ?>
         </div>
         <div class="content">
             <section class="parakalimet">

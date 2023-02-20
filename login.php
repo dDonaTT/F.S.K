@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F.S.K</title>
+    <link rel="stylesheet" href="stylelogin.css">
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">  
+</head>
+<body>
+    <div class="container">
+        <div class="screen2">
+            <label><a href="home.php"> Forca e Sigurisë së Kosovës </a></label>
+        <div class="logo">
+            
+            <a href="home.php"><img src="img/logo.png" alt="logo"></a>
+        </div>
+        </div>
+        <div class="screen">
+            <div class="screen_content">
+                <form action="" method="POST" class="login" onsubmit="return validate()">
+
+                    <label>Log in</label>
+                    <div class="login_field">
+                        <i class="login_icon"></i>
+                        
+                        <input type="text" class="login_input" placeholder="Username" id="user">
+                    </div>
+                    <div class="login_field">
+                        <i class="login_icon"></i>
+                        <input type="password" class="login_input" placeholder="Password" id="pass">
+                        
+                    </div>
+                    <p>Nuk keni account?Kliko <a href="register.html"><b> ketu </b></a> tu regjistruar</p>
+                    <button class="button login_submit">
+                        <span class="button_text">Log In</span>
+                        <i class="button_icon"></i>
+                    </button>				
+                    
+                </form>
+                
+            </div>
+            <div class="screen_background">
+                <span class="screen_background_shape screen_background_shape4"></span>
+                <span class="screen_background_shape screen_background_shape3"></span>		
+                <span class="screen_background_shape screen_background_shape2"></span>
+                <span class="screen_background_shape screen_background_shape1"></span>
+            </div>		
+        </div>
+    </div>
+    <script src="loginscript.js"></script>
+</body>
+</html>

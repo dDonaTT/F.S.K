@@ -12,10 +12,10 @@
 <body>
     <div class="container">
         <div class="screen2">
-            <label><a href="home.html"> Forca e Sigurisë së Kosovës </a></label>
+            <label><a href="home.php"> Forca e Sigurisë së Kosovës </a></label>
         <div class="logo">
             
-            <a href="home.html"><img src="img/logo.png" alt="logo"></a>
+            <a href="home.php"><img src="img/logo.png" alt="logo"></a>
         </div>
         </div>
         <div class="screen">
