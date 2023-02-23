@@ -1,55 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>F.S.K</title>
-    <link rel="stylesheet" href="stylelogin.css">
-    <link rel="icon" href="img/logo.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">  
-</head>
-<body>
-    <div class="container">
-        <div class="screen2">
-            <label><a href="home.php"> Forca e Sigurisë së Kosovës </a></label>
-        <div class="logo">
-            
-            <a href="home.php"><img src="img/logo.png" alt="logo"></a>
-        </div>
-        </div>
-        <div class="screen">
-            <div class="screen_content">
-                <form action="" method="POST" class="login" onsubmit="return validate()">
+<?php
+include('loginparts/menu.php');
+include('navbar/login-check.php');
+include('admin/connection/connection.php'); 
 
-                    <label>Log in</label>
-                    <div class="login_field">
-                        <i class="login_icon"></i>
-                        
-                        <input type="text" class="login_input" placeholder="Username" id="user">
-                    </div>
-                    <div class="login_field">
-                        <i class="login_icon"></i>
-                        <input type="password" class="login_input" placeholder="Password" id="pass">
-                        
-                    </div>
-                    <p>Nuk keni account?Kliko <a href="register.html"><b> ketu </b></a> tu regjistruar</p>
-                    <button class="button login_submit">
-                        <span class="button_text">Log In</span>
-                        <i class="button_icon"></i>
-                    </button>				
-                    
-                </form>
-                
+class Login {
+    private $conn;
+
+    function __construct($conn) {
+        $this->conn = $conn;
+    }
+
+    public function validateUser($username, $password) {
+        $password = md5($password);
+        $sql = "SELECT * FROM register WHERE username='$username' AND password='$password'";
+        $res = mysqli_query($this->conn, $sql);
+        $count = mysqli_num_rows($res);
+        if($count === 1){        
+            $_SESSION['login']="Login Successful";
+            $_SESSION['user']=$username;       
+            header('location:'.SITEURL.'home.php'); 
+        } else {
+            $_SESSION['login']="Username or Password did not match.";
+            header('location:'.SITEURL.'login.php');
+        }
+    }
+}
+
+$login = new Login($conn);
+
+if(isset($_POST['submit'])){
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+    $login->validateUser($username, $password);
+}
+
+?>
+<div class="screen">
+    <div class="screen_content">
+        <form action="" method="POST" class="login" onsubmit="return validate()">
+            <label>Log in</label>
+            <div class="login_field">
+                <i class="login_icon"></i>
+                <input type="text" name="username" class="login_input" placeholder="Username" id="user">
             </div>
-            <div class="screen_background">
-                <span class="screen_background_shape screen_background_shape4"></span>
-                <span class="screen_background_shape screen_background_shape3"></span>		
-                <span class="screen_background_shape screen_background_shape2"></span>
-                <span class="screen_background_shape screen_background_shape1"></span>
-            </div>		
-        </div>
+            <div class="login_field">
+                <i class="login_icon"></i>
+                <input type="password" name="password" class="login_input" placeholder="Password" id="pass">                        
+            </div>
+            <p>Kyquni si <a href="admin/login-admin.php" class="admin"> <b> Admin!</b> </a><br></p>
+            <p>Nuk keni account?Kliko <a href="register.php"><b> ketu </b></a> tu regjistruar</p>
+            <div class="login-btn">
+                <input type="submit" name="submit" value="Login" class="btn-login">
+            </div>			
+        </form>                
     </div>
-    <script src="loginscript.js"></script>
+    <div class="screen_background">
+        <span class="screen_background_shape screen_background_shape4"></span>
+        <span class="screen_background_shape screen_background_shape3"></span>		
+        <span class="screen_background_shape screen_background_shape2"></span>
+        <span class="screen_background_shape screen_background_shape1"></span>
+    </div>		
+</div>
+<script src="loginscript.js"></script>
 </body>
 </html>
