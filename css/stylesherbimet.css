@@ -30,7 +30,7 @@ html{
 
 .main{
   
-  background: linear-gradient(to top, rgba(0,0,0,0.3)10%,rgba(0,0,0,0.3)10%), url(img/backgound.png);
+  background: linear-gradient(to top, rgba(0,0,0,0.3)10%,rgba(0,0,0,0.3)10%), url(../img/backgound.png);
   background-position: center;
   background-size: cover;  
   padding-top: 120px;

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>F.S.K</title>
     <link rel="icon" href="img/logo.png">
-    <link rel="stylesheet" href="stylesherbimet.css">
+    <link rel="stylesheet" href="css/stylesherbimet.css">
 </head>
 <body>
     

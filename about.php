@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>F.S.K</title>
     <link rel="icon" href="img/logo.png">
-    <link rel="stylesheet" href="styleabout.css">
+    <link rel="stylesheet" href="css/styleabout.css">
 </head>
 <body>
     
