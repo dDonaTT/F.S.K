@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.outline{
+    
+    padding: 1%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.text-center{
+    text-align: center;
+}
+.clearfix{
+    float: none;
+    clear: both;
+}
+.tablecontent{
+    width: 100%;
+}
+table tr th{
+    border-bottom: 1px solid black;
+    padding: 1%;
+    text-align: left;
+}   
+table tr td{
+    padding: 1%;
+}
+.icon{
+    display: flex;
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.icon img{
+    width: 40px;
+    height: 40px;
+    margin-left: 1px;
+    padding-left: 10px;
+}
+.btn-primary{
+    background-color: #1e90ff;
+    padding: 1%;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.btn-update{
+    background-color: #02ca4b;
+    padding: 1%;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.btn-delete{
+    background-color: #d14848;
+    padding: 1%;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.menu{
+    text-align: center;
+    border-bottom: 1px solid grey;
+    height: 8vh;
+}
+.menu ul{
+    list-style: none;
+}
+.menu ul li{
+    display: inline;
+    padding: 1%;
+}
+.menu ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #95B36D
+}
+.menu ul li a:hover{
+    color: #35540A;
+}
+.main-content{
+   
+    background-color: #f1f2f6;
+    padding: 3% 0;
+}
+.boxes{
+    width: 17%;
+    background-color: white;
+    margin: 1%;
+    padding: 2%;
+    float: left;
+}
+.login{
+    border: 1px solid black;
+    width: 20%;
+    margin: 10% auto;
+    padding: 2%;
+}
+.text{
+    font-size: small;
+    color: red;
+}
+.text1{
+    font-size: small;
+    color: #02ca4b;
+}
+body{
+    background: linear-gradient(to top, rgba(0,0,0,0.3)10%,rgba(0,0,0,0.3)10%), url(../img/backgound.png);
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container{
+    background-color: white;
+    border-radius: 30px;
+    text-align: center;
+    width: 360px;
+    height: 350px;
+    margin-left: 38%;
+    margin-top:11% ;
+}
+
+.input{
+    background-color: rgb(233, 238, 240);
+    width: 280px;
+    height: 35px;
+    border-radius: 30px;
+    font-size: medium;
+    border: 1px solid rgb(233, 238, 240);
+    padding-left: 15px;
+    margin-top: 2%;
+}
+
+.btn-login{
+    background-color: #35540A;
+    width: 300px;
+    height: 40px;
+    border-radius: 30px;
+    font-size: medium;
+    color: white;
+    border: 1px solid #95B36D;
+    font-weight: bolder;
+}
+#titulli >h2{
+    border-radius: 30px;
+    padding-top: 20px;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
