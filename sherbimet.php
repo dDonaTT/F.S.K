@@ -14,12 +14,12 @@
     <div class="main">
         <div class="navbar">
             <div class="icon">
-                <a href="home.html"><img src="img/logo.png" alt="logo"></a>
+                <a href="home.php"><img src="img/logo.png" alt="logo"></a>
             </div>
 
             <?php 
-                include('navbar/navbar.php');
-                ?>
+                include('navbar/navbar.php')
+            ?>
         </div>
         <div class="content">
             <section class="parakalimet">
@@ -74,14 +74,14 @@
                             counter = 1;
                         }
                     }, 5000);
-                </script>
+    </script>
             </section>
             <section class="armatimi" id="armatimi">
             <h2>Armatimi i F.S.K</h2>
             <br>
             <table border="1">
                 <tr>
-                    <th colspan="5"><b>Pistoletat</b></th>
+                    <th colspan="5"><b>Armatimi</b></th>
 
                     
                 </tr>
@@ -91,97 +91,52 @@
                     <th>Kalibri</th>
                     <th>Shenime</th>
                 </tr>
-                <tr>
-                    
-                    <td><img src="img/glock.png" alt=""></td>
-                    <td>Glock-17</td>   
-                    <td>9x19mm</td>
-                    <td>armë anësore</td>
-                </tr>
-                <tr>
-                    <td><img src="img/m17-ms-right-1.png" alt=""></td>
-                    <td>Sig Sauer M17</td>
-                    <td>9x19mm</td>
-                    <td>armë anësore</td>
+              
+                  <?php
 
-
+                  $sql2= "SELECT * FROM produktet ";
+      
+                  $res2= mysqli_query($conn, $sql2);
+      
+                  $count2= mysqli_num_rows($res2);
+      
+                  if($count2>0){
+      
+                    while($row=mysqli_fetch_assoc($res2)){
+                        $fotografia = $row['Fotografia'];
+                        $emri = $row['Emri'];
+                        $kalibri = $row['Kalibri'];
+                        $shenime = $row['Shenime'];
+                        
+                        ?>
+      
+                              
+                                  <?php
+                                      if($fotografia==""){
+                                          echo "<div class='error'>Image not Availible";
+                                      }
+                                      else{
+                                        ?>
+                                          
+      
+                                        <?php
+                                      }
+      
+                                ?>
+                                <td><img src="<?php echo SITEURL; ?>img/armt/<?php echo $fotografia;?> " ></td>
+                                <td><?php echo $emri; ?></td>
+                                <td><?php echo $kalibri; ?></p></td>
+                                <td><?php echo $shenime; ?></p></td>
                 </tr>
-                <tr>
-                    
-                    <td><img src="img/FN_Five_Seven.png" alt=""></td>
-                    <td>FN FiveSeven</td>
-                    <td>5.7x28mm</td>
-                    <td>armë anësore</td>
+            
+                        <?php
+                    }
 
-                </tr>
-              <tr>                   
-                    <th colspan="5"><b>Armet e Gjata</b></th>  </tr> 
-                    <tr>
-                        <th>Fotografia</th>
-                        <th>Emri</th>
-                        <th>Kalibri</th>
-                        <th>Shenime</th>
-                    </tr>
-                    <tr>
-                    <td><img src="img/Gewehr_G36_noBG.png" alt=""></td>
-                    <td>Hecklet & Koch G36</td> 
-                    <td>5.56x45mm</td>
-                    <td>armë e distancave te shkurta</td>
-                    </tr>
-                    <tr>
-                    <td><img src="img/M5_Carbine.png" alt=""></td>
-                    <td>M5 Colt Carabine</td> 
-                    <td>5.56x45mm</td>
-                    <td>armë e distancave mesatare</td>
-                    </tr> 
-                    <tr>
-                    <td><img src="img/mpt_76-.png" alt=""></td>
-                    <td>MPT-76</td> 
-                    <td>7.62x51mm</td>
-                    <td>armë e distancave te largta</td>
-                    </tr> 
-                    <tr>                   
-                        <th colspan="5"><b>Snajperët</b></th>  </tr> 
-                        <tr>
-                            <th>Fotografia</th>
-                            <th>Emri</th>
-                            <th>Kalibri</th>
-                            <th>Shenime</th>
-                        </tr>
-                    <td><img src="img/Barrett-M82A1.png" alt=""></td>
-                    <td>Barrett M82</td> 
-                    <td>.50 BMG ose 12.7x99mm</td>
-                    <td>armë e distancave te largta</td>
-                    </tr> <td><img src="img/SR-25_pic02-.png" alt=""></td>
-                    <td>SR-25</td> 
-                    <td>7.62x51mm</td>
-                    <td>armë e distancave te largta</td>
-                    <tr>                   
-                        <th colspan="5"><b>AntiTanket Miltalerët dhe Minahedhësit</b></th>  </tr> 
-                        <tr>
-                            <th>Fotografia</th>
-                            <th>Emri</th>
-                            <th>Kalibri</th>
-                            <th>Shenime</th>
-                        </tr>
-                        <tr>
-                    <td><img src="img/javelin-.png" alt=""></td>
-                    <td>FGM-148 Javelin</td> 
-                    <td>Predha 127mm</td>
-                    <td>Sistem Anti-Tankë i avancuar</td>
-                        </tr>
-                        <tr>
-                    <td><img src="img/mortar.png" alt=""></td>
-                    <td>Mortar M8</td> 
-                    <td>Predha 81mm</td>
-                    <td>Minahedhës</td>
-                        </tr>
-                    <tr>
-                    <td><img src="img/PEO_Browning_M2.png" alt=""></td>
-                    <td>Browning M2</td> 
-                    <td>.50 BMG</td>
-                    <td>Mitraler</td>
-                    </tr>                
+                        }else{
+                            echo "<div class='error'>Product not available</div>";
+                        }
+
+                        ?>                
             </table>
             </section>
             <br>

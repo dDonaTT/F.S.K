@@ -1,3 +1,7 @@
+<?php
+    include('./admin/connection/connection.php');
+    
+?>
 <div id="headD">
 
                 <ul>
