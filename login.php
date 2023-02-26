@@ -1,6 +1,5 @@
 <?php
 include('loginparts/menu.php');
-include('navbar/login-check.php');
 include('admin/connection/connection.php'); 
 
 class Login {

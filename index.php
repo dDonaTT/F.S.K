@@ -1,6 +1,4 @@
-<?php 
-  include('navbar/login-check.php');
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
