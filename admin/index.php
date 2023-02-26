@@ -1,19 +1,18 @@
 <?php
 
-// include the menu file
+
 include('parts/menu.php');
 
 class Dashboard {
 
-    // define properties
+    
     private $conn;
 
-    // constructor
     public function __construct($db) {
         $this->conn = $db;
     }
 
-    // count number of admins
+    
     public function countAdmins() {
         $sql = "SELECT * FROM admin";
         $res = mysqli_query($this->conn, $sql);
@@ -21,7 +20,7 @@ class Dashboard {
         return $count;
     }
 
-    // count number of applications
+   
     public function countApplications() {
         $sql = "SELECT * FROM aplikimet";
         $res = mysqli_query($this->conn, $sql);
@@ -29,7 +28,7 @@ class Dashboard {
         return $count;
     }
 
-    // count number of products
+    
     public function countProducts() {
         $sql = "SELECT * FROM produktet";
         $res = mysqli_query($this->conn, $sql);
@@ -37,7 +36,7 @@ class Dashboard {
         return $count;
     }
 
-    // count number of users
+    
     public function countUsers() {
         $sql = "SELECT * FROM register";
         $res = mysqli_query($this->conn, $sql);

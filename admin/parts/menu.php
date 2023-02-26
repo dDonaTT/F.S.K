@@ -23,7 +23,7 @@
                 <li><a href="manage-admin.php">Admin</a></li>
                 <li><a href="manage-aplikimet.php">Aplikimet</a></li>
                 <li><a href="manage-sherbimet.php">Sherbimet</a></li>
-                <li><a href="manage-register.php">Users</a></li>
+                <li><a href="manage-users.php">Users</a></li>
                 <li><a href="logout.php">Logout</a></li>
 
 
